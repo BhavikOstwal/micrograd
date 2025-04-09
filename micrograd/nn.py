@@ -15,7 +15,6 @@ class Neuron:
     def __call__(self,x):
         # out = sum((wi*xi for wi, xi in zip(self.w, x))) + self.b
         out = sum((wi*xi for wi, xi in zip(self.w, x)), self.b) # efficient than above line as sum takes an option 2nd argument, that is by default  = 0
-        # activ = out
 
         if (self.act_fn=="relu"):
             activ = out.relu()
