@@ -79,7 +79,7 @@ class MLP:
             out = Li(out)
         return out
     
-    def MSE(self,y, y_preed):
+    def MSE(self,y, y_pred):
         Loss = sum([(yp-yt)**2 for yp,yt in zip(y_pred, y)])
         return Loss
 
